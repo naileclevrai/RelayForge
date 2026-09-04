@@ -6,6 +6,16 @@ export {
 } from './factory.ts';
 export { migrateProject } from './migrate.ts';
 export {
+  addSectionToProject,
+  createSymbol,
+  removeSectionFromProject,
+  removeSymbol,
+  renameProject,
+  updateSection,
+  updateSectionBody,
+  upsertSymbol,
+} from './mutations.ts';
+export {
   assertCurrentFormat,
   isRelayForgeProject,
   parseProject,
