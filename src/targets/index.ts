@@ -1,3 +1,4 @@
+export { getTarget, listTargets, TSX37_FAMILY, tsx37Target } from './registry.ts';
 export type {
   AddressClass,
   AddressParseFailure,
