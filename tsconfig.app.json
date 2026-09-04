@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@core": ["src/core/index.ts"],
+      "@core/*": ["src/core/*"],
+      "@project": ["src/project/index.ts"],
+      "@project/*": ["src/project/*"],
+      "@targets": ["src/targets/index.ts"],
+      "@targets/*": ["src/targets/*"],
+      "@ladder": ["src/ladder/index.ts"],
+      "@ladder/*": ["src/ladder/*"],
+      "@grafcet": ["src/grafcet/index.ts"],
+      "@grafcet/*": ["src/grafcet/*"],
+      "@exporters": ["src/exporters/index.ts"],
+      "@exporters/*": ["src/exporters/*"],
+      "@persistence": ["src/persistence/index.ts"],
+      "@persistence/*": ["src/persistence/*"],
+      "@ui": ["src/ui/index.ts"],
+      "@ui/*": ["src/ui/*"]
+    }
+  },
+  "include": ["src"]
+}

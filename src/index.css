@@ -1,0 +1,86 @@
+:root {
+  color-scheme: dark;
+  --bg-void: #0c0e12;
+  --bg-panel: #14171d;
+  --bg-raised: #1b1f28;
+  --bg-input: #10131a;
+  --line: #2a3140;
+  --line-strong: #3d4658;
+  --text: #e8eaed;
+  --text-dim: #8b93a7;
+  --text-mute: #5c6578;
+  --accent: #f5a524;
+  --accent-dim: #b87a12;
+  --rail: #8b93a7;
+  --ok: #3dd68c;
+  --warn: #f5a524;
+  --err: #ff5c5c;
+  --font-ui: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Cascadia Mono', ui-monospace, monospace;
+  --titlebar: 40px;
+  --sidebar: 248px;
+  --inspector: 280px;
+  --diagnostics: 168px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  background: var(--bg-void);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  letter-spacing: 0.01em;
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse at 12% -10%, rgba(245, 165, 36, 0.06), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 28%);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+.boot {
+  min-height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.boot-mark {
+  margin: 0 auto 0.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.boot h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.boot p {
+  margin: 0;
+  color: var(--text-dim);
+}
